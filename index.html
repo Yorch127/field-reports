@@ -13,7 +13,7 @@
   *{margin:0;padding:0;box-sizing:border-box;}
   body{font-family:'Barlow',sans-serif;background:#E0E0E0;color:var(--black);font-size:14px;line-height:1.6;}
   .page{max-width:900px;margin:20px auto;background:var(--white);border:1px solid var(--border);box-shadow:0 3px 16px rgba(0,0,0,.12);}
-
+ 
   /* HEADER */
   .report-header{display:grid;grid-template-columns:1fr 1fr;border-bottom:4px solid var(--red);}
   .header-left{padding:20px 24px;border-right:1px solid var(--border);}
@@ -22,41 +22,49 @@
   .header-right{padding:20px 24px;display:flex;flex-direction:column;justify-content:center;align-items:flex-end;}
   .report-title{font-family:'Barlow Condensed',sans-serif;font-size:clamp(16px,3vw,22px);font-weight:800;color:var(--black);letter-spacing:1px;text-transform:uppercase;text-align:right;line-height:1.2;}
   .report-badge{display:inline-block;background:var(--red);color:var(--white);font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;padding:3px 12px;margin-top:7px;letter-spacing:1px;}
-
+ 
   /* SECTION HEADER */
   .sec-hdr{background:var(--sec-bg);color:var(--white);font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:8px 24px;border-left:5px solid var(--red);}
-
+ 
   /* INFO GRID */
   .info-grid{display:grid;grid-template-columns:repeat(3,1fr);}
   .info-cell{padding:10px 16px;border-right:1px solid var(--border);border-bottom:1px solid var(--border);}
   .info-cell:nth-child(3n){border-right:none;}
   .info-label{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--mid);margin-bottom:3px;}
   .info-value{font-size:13px;font-weight:600;color:var(--black);}
-
+ 
   /* NARRATIVE */
   .narrative{padding:18px 24px;border-bottom:1px solid var(--border);line-height:1.75;color:var(--dark);}
   .narrative p{margin-bottom:12px;}
   .narrative p:last-child{margin-bottom:0;}
-
+ 
   /* WORKER CARDS */
   .workers-section{padding:16px 24px 24px;}
   .worker-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
   .worker-card{border:1px solid var(--border);background:var(--light);overflow:hidden;display:flex;flex-direction:column;}
-  .worker-card img{width:100%;height:200px;object-fit:cover;object-position:center 15%;display:block;border-bottom:1px solid var(--border);}
+  .worker-card img{width:100%;height:200px;object-fit:cover;object-position:center 20%;display:block;border-bottom:1px solid var(--border);}
+  .worker-card:nth-child(1) img{object-position:center 10%;}
+  .worker-card:nth-child(2) img{object-position:center 15%;}
+  .worker-card:nth-child(3) img{object-position:center 20%;}
+  .worker-card:nth-child(4) img{object-position:center 30%;}
+  .worker-card:nth-child(5) img{object-position:center 20%;}
+  .worker-card:nth-child(6) img{object-position:center 15%;}
+  .worker-card:nth-child(7) img{object-position:center 25%;}
+  .worker-card:nth-child(8) img{object-position:center 20%;}
   .worker-info{padding:8px 10px;}
   .worker-name{font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;color:var(--black);line-height:1.2;}
   .worker-role{font-size:11px;font-weight:600;color:var(--red);text-transform:uppercase;letter-spacing:.5px;margin-top:3px;}
   .worker-team{font-size:11px;color:var(--mid);margin-top:2px;}
-
+ 
   /* PHOTO GRID */
   .photos-section{padding:16px 24px 24px;}
   .photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
   .photo-card{border:1px solid var(--border);overflow:hidden;}
   .photo-card img{width:100%;height:200px;object-fit:cover;display:block;}
-
+ 
   /* FOOTER */
   .report-footer{background:var(--sec-bg);color:#AAA;padding:10px 24px;display:flex;justify-content:space-between;font-size:11px;flex-wrap:wrap;gap:6px;}
-
+ 
   /* MOBILE */
   @media(max-width:640px){
     body{background:#fff;font-size:13px;}
@@ -97,7 +105,7 @@
 </head>
 <body>
 <div class="page">
-
+ 
   <!-- HEADER -->
   <div class="report-header">
     <div class="header-left">
@@ -109,7 +117,7 @@
       <div class="report-badge">04 / 29 / 2026</div>
     </div>
   </div>
-
+ 
   <!-- PROJECT INFO -->
   <div class="sec-hdr">Project Information</div>
   <div class="info-grid">
@@ -123,15 +131,15 @@
     <div class="info-cell"><div class="info-label">Weather</div><div class="info-value">Overcast / Partly Cloudy</div></div>
     <div class="info-cell"><div class="info-label">PO#</div><div class="info-value">4044</div></div>
   </div>
-
+ 
   <!-- NARRATIVE -->
   <div class="sec-hdr">Field Observations</div>
   <div class="narrative">
     <p>On April 29, 2026, a field progress inspection was conducted at Sheldon Fire Station #5. Conditions on site were overcast with partial cloud cover. Young &amp; Sons Drywall crews were actively working across both the exterior and interior of the building.</p>
-    <p>On the exterior, YSD crews were engaged in metal stud framing and drywall sheathing installation along the building's wall faces. Exterior framing and sheathing work was progressing across multiple elevations of the main structure, with crews working at both ground level and elevated scaffold platforms to complete the exterior scope.</p>
+    <p>On the exterior, YSD crews were focused on metal stud framing along the building's wall faces and ceiling framing overhead. Exterior wall framing and ceiling framing work was progressing across multiple areas of the structure to complete the perimeter and overhead framing scope.</p>
     <p>On the interior, YSD crews were actively performing metal stud framing, drywall hanging, and finishing work throughout multiple rooms and corridors. Partition walls were framed with steel studs in various areas, with drywall hung and first coats of joint compound applied to seams and fastener heads in sections where hanging was complete. Ceiling grid framing was also underway in the open bay areas, with the suspended metal stud grid progressing across the overhead scope.</p>
   </div>
-
+ 
   <!-- PERSONNEL -->
   <div class="sec-hdr">Personnel on Site — 8 Workers</div>
   <div class="workers-section">
@@ -146,7 +154,7 @@
       <div class="worker-card"><img src="photos/worker_08.jpg" alt="Guessler Sanchez" loading="lazy"/><div class="worker-info"><div class="worker-name">Guessler Sanchez</div><div class="worker-role">Hanger</div><div class="worker-team">Nelson's Team</div></div></div>
     </div>
   </div>
-
+ 
   <!-- EXTERIOR PHOTOS -->
   <div class="sec-hdr">Exterior Photo Documentation — 7 Photos</div>
   <div class="photos-section">
@@ -160,7 +168,7 @@
       <div class="photo-card"><img src="photos/ext_07.jpg" loading="lazy"/></div>
     </div>
   </div>
-
+ 
   <!-- INTERIOR PHOTOS -->
   <div class="sec-hdr">Interior Photo Documentation — 15 Photos</div>
   <div class="photos-section">
@@ -182,13 +190,13 @@
       <div class="photo-card"><img src="photos/int_15.jpg" loading="lazy"/></div>
     </div>
   </div>
-
+ 
   <!-- FOOTER -->
   <div class="report-footer">
     <span>Young &amp; Sons Drywall, L.P. &nbsp;·&nbsp; Houston, TX &nbsp;·&nbsp; Tel. 713.680.0148</span>
     <span>Internal Field Documentation · Retain on File · PO# 4044</span>
   </div>
-
+ 
 </div>
 </body>
 </html>
